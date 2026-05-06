@@ -1,0 +1,27 @@
+{
+  "name": "THE GALAXY ACCOUNTING",
+  "short_name": "GALAXY",
+  "description": "نظام المبيعات والمخازن الكوني — وضع الهاتف",
+  "start_url": "/mobile",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0b1f",
+  "theme_color": "#0b0b1f",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
