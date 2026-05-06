@@ -1,0 +1,531 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ===========================================================
+ * THE GALAXY ACCOUNTING SOFTWARE — Cosmic Design System
+ * كل الألوان قابلة للتخصيص من قبل المستخدم لاحقاً
+ * =========================================================== */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-glow: var(--primary-glow);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-glow: var(--accent-glow);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-nebula: var(--nebula);
+  --color-stardust: var(--stardust);
+
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-display: "Nunito", system-ui, sans-serif;
+  --font-arabic: "Cairo", "Nunito", system-ui, sans-serif;
+  --font-handwritten: "Caveat", "Aref Ruqaa", cursive;
+  --font-heading-arabic: "Aref Ruqaa", "Cairo", serif;
+}
+
+/* ============= الوضع الليلي (الافتراضي) — مؤسسي رصين ============= */
+:root,
+.dark {
+  --radius: 0.0625rem;
+
+  /* خلفيات داكنة هادئة (slate/teal) */
+  --background: oklch(0.16 0.022 250);
+  --foreground: oklch(0.985 0.008 250);
+
+  --card: oklch(0.225 0.024 250 / 0.98);
+  --card-foreground: oklch(0.985 0.008 250);
+  --popover: oklch(0.225 0.024 250);
+  --popover-foreground: oklch(0.985 0.008 250);
+
+  /* أصفر ذهبي مؤسسي — أوضح وأكثر تباينًا */
+  --primary: oklch(0.82 0.16 88);
+  --primary-foreground: oklch(0.16 0.022 250);
+  --primary-glow: oklch(0.88 0.16 90);
+
+  --accent: oklch(0.85 0.16 92);
+  --accent-foreground: oklch(0.16 0.022 250);
+  --accent-glow: oklch(0.90 0.14 94);
+
+  --secondary: oklch(0.30 0.025 250);
+  --secondary-foreground: oklch(0.985 0.008 250);
+
+  --muted: oklch(0.27 0.022 250);
+  --muted-foreground: oklch(0.80 0.018 250);
+
+  --destructive: oklch(0.62 0.20 25);
+  --destructive-foreground: oklch(0.99 0.008 250);
+  --success: oklch(0.62 0.14 160);
+  --success-foreground: oklch(0.99 0.008 250);
+  --warning: oklch(0.78 0.14 78);
+  --warning-foreground: oklch(0.16 0.022 250);
+
+  --border: oklch(0.50 0.025 250 / 0.55);
+  --input: oklch(0.28 0.025 250);
+  --ring: oklch(0.82 0.16 88);
+
+  --nebula: oklch(0.60 0.12 85);
+  --stardust: oklch(0.88 0.10 88);
+
+  --chart-1: oklch(0.82 0.16 88);
+  --chart-2: oklch(0.85 0.16 92);
+  --chart-3: oklch(0.62 0.14 160);
+  --chart-4: oklch(0.70 0.18 50);
+  --chart-5: oklch(0.62 0.20 25);
+
+  --sidebar: oklch(0.20 0.024 250 / 0.98);
+  --sidebar-foreground: oklch(0.985 0.008 250);
+  --sidebar-primary: oklch(0.82 0.16 88);
+  --sidebar-primary-foreground: oklch(0.16 0.022 250);
+  --sidebar-accent: oklch(0.28 0.025 250);
+  --sidebar-accent-foreground: oklch(0.985 0.008 250);
+  --sidebar-border: oklch(0.45 0.025 250 / 0.40);
+  --sidebar-ring: oklch(0.82 0.16 88);
+}
+
+/* ============= الوضع النهاري — أبيض دافئ نظيف مع لمسات ذهبية ============= */
+.light {
+  /* خلفية بيضاء دافئة جداً */
+  --background: oklch(0.995 0.004 85);
+  --foreground: oklch(0.18 0.012 240);
+
+  --card: oklch(1.00 0 0);
+  --card-foreground: oklch(0.18 0.012 240);
+  --popover: oklch(1.00 0 0);
+  --popover-foreground: oklch(0.18 0.012 240);
+
+  /* ذهبي عميق — تباين عالٍ على الأبيض */
+  --primary: oklch(0.55 0.15 75);
+  --primary-foreground: oklch(0.99 0.005 85);
+  --primary-glow: oklch(0.66 0.16 80);
+
+  --accent: oklch(0.60 0.15 78);
+  --accent-foreground: oklch(0.99 0.005 85);
+  --accent-glow: oklch(0.70 0.15 82);
+
+  --secondary: oklch(0.95 0.012 85);
+  --secondary-foreground: oklch(0.20 0.012 240);
+
+  --muted: oklch(0.955 0.01 85);
+  --muted-foreground: oklch(0.40 0.018 240);
+
+  --destructive: oklch(0.52 0.21 25);
+  --destructive-foreground: oklch(0.99 0.005 85);
+  --success: oklch(0.46 0.14 160);
+  --success-foreground: oklch(0.99 0.005 85);
+  --warning: oklch(0.60 0.16 70);
+  --warning-foreground: oklch(0.18 0.012 240);
+
+  /* حدود واضحة ومحددة */
+  --border: oklch(0.84 0.012 85);
+  --input: oklch(0.96 0.01 85);
+  --ring: oklch(0.55 0.15 75);
+
+  --nebula: oklch(0.82 0.10 85);
+  --stardust: oklch(0.50 0.13 80);
+
+  --chart-1: oklch(0.55 0.15 75);
+  --chart-2: oklch(0.60 0.15 78);
+  --chart-3: oklch(0.46 0.14 160);
+  --chart-4: oklch(0.62 0.18 50);
+  --chart-5: oklch(0.52 0.21 25);
+
+  --sidebar: oklch(0.985 0.006 85);
+  --sidebar-foreground: oklch(0.20 0.012 240);
+  --sidebar-primary: oklch(0.55 0.15 75);
+  --sidebar-primary-foreground: oklch(0.99 0.005 85);
+  --sidebar-accent: oklch(0.94 0.014 85);
+  --sidebar-accent-foreground: oklch(0.20 0.012 240);
+  --sidebar-border: oklch(0.84 0.012 85);
+  --sidebar-ring: oklch(0.55 0.15 75);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  /* حجم خط أساسي أكبر للقراءة المريحة على شاشات سطح المكتب */
+  html {
+    font-family: var(--font-arabic);
+    font-size: 17px;
+  }
+
+  html[lang="en"],
+  html[lang="fr"] {
+    font-family: var(--font-display);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    min-height: 100vh;
+    /* تصميم متجاوب كامل — يعمل على جميع الأحجام */
+    min-width: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* تباين أوضح للنصوص الثانوية */
+  .text-muted-foreground { color: var(--muted-foreground); }
+
+  /* حلقة تركيز واضحة لإمكانية الوصول */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* تصغير ذكي للنصوص على الشاشات الصغيرة */
+  @media (max-width: 1024px) {
+    html { font-size: 16px; }
+  }
+  @media (max-width: 768px) {
+    html { font-size: 15px; }
+  }
+  @media (max-width: 480px) {
+    html { font-size: 14px; }
+  }
+
+  /* خلفية مؤسسية هادئة — بدون توهجات كونية */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+      linear-gradient(180deg,
+        color-mix(in oklab, var(--background) 100%, transparent) 0%,
+        color-mix(in oklab, var(--primary) 4%, var(--background)) 100%);
+    pointer-events: none;
+    z-index: -2;
+  }
+}
+
+@layer utilities {
+  /* بطاقة بسيطة — بدون زجاج كثيف */
+  .glass-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 2px color-mix(in oklab, black 6%, transparent);
+  }
+
+  /* أُلغي توهج النيون — حدّ وظل خفيف فقط */
+  .neon-glow {
+    box-shadow: 0 2px 8px color-mix(in oklab, var(--primary) 18%, transparent);
+  }
+
+  .neon-glow-accent {
+    box-shadow: 0 2px 8px color-mix(in oklab, var(--accent) 18%, transparent);
+  }
+
+  .neon-text { text-shadow: none; }
+  .neon-text-accent { text-shadow: none; }
+
+  /* تدرج ملحمي للنصوص */
+  .text-gradient-galaxy {
+    background: linear-gradient(135deg, var(--primary-glow), var(--accent-glow), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* بطاقة 3D عند hover — أنعم وأكثر فخامة */
+  .card-3d {
+    transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+                box-shadow 0.28s cubic-bezier(0.2, 0.8, 0.2, 1),
+                border-color 0.28s ease;
+    will-change: transform;
+  }
+  .card-3d:hover {
+    transform: translateY(-4px) scale(1.015);
+    box-shadow:
+      0 12px 32px color-mix(in oklab, var(--primary) 28%, transparent),
+      0 4px 12px color-mix(in oklab, var(--accent) 18%, transparent),
+      inset 0 1px 0 color-mix(in oklab, white 14%, transparent);
+    border-color: color-mix(in oklab, var(--primary) 55%, transparent);
+  }
+
+  /* أنيميشن نبض النيون — opacity فقط (compositor-only) */
+  @keyframes neon-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.78; }
+  }
+  .animate-neon-pulse {
+    animation: neon-pulse 2.5s ease-in-out infinite;
+    will-change: opacity;
+  }
+
+  /* تعويم للنجوم */
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-12px) translateX(8px); }
+  }
+  .animate-float {
+    animation: float-slow 6s ease-in-out infinite;
+    will-change: transform;
+  }
+
+  /* تدوير ملحمي */
+  @keyframes orbit {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .animate-orbit {
+    animation: orbit 30s linear infinite;
+    will-change: transform;
+  }
+
+  /* ظهور تدريجي ملحمي */
+  @keyframes cosmic-in {
+    from { opacity: 0; transform: translateY(14px) scale(0.96); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  .animate-cosmic-in {
+    animation: cosmic-in 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+
+  /* انزلاق ناعم من الأسفل (للقوائم والمودالات على الهاتف) */
+  @keyframes slide-up-soft {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-slide-up-soft {
+    animation: slide-up-soft 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+
+  /* تدرج نيون متحرك للحدود */
+  @keyframes shimmer-border {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+  .shimmer-border {
+    background: linear-gradient(110deg,
+      color-mix(in oklab, var(--primary) 60%, transparent),
+      color-mix(in oklab, var(--accent) 60%, transparent),
+      color-mix(in oklab, var(--primary-glow) 60%, transparent),
+      color-mix(in oklab, var(--accent) 60%, transparent),
+      color-mix(in oklab, var(--primary) 60%, transparent)
+    );
+    background-size: 200% 100%;
+    animation: shimmer-border 4s linear infinite;
+  }
+
+  /* تدرج زجاجي فاخر للأزرار */
+  .btn-cosmic {
+    background: linear-gradient(135deg,
+      var(--primary),
+      var(--accent));
+    color: var(--primary-foreground);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    border: 1px solid color-mix(in oklab, var(--primary) 70%, transparent);
+    box-shadow:
+      0 6px 18px color-mix(in oklab, var(--primary) 40%, transparent),
+      inset 0 1px 0 color-mix(in oklab, white 28%, transparent);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  }
+  .btn-cosmic:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.06);
+    box-shadow:
+      0 10px 28px color-mix(in oklab, var(--primary) 50%, transparent),
+      inset 0 1px 0 color-mix(in oklab, white 32%, transparent);
+  }
+  .btn-cosmic:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  /* مساحات متجاوبة للهاتف */
+  .responsive-padding {
+    padding: clamp(0.75rem, 2.5vw, 1.5rem);
+  }
+  .responsive-text-lg {
+    font-size: clamp(1rem, 2.8vw, 1.25rem);
+  }
+  .responsive-text-xl {
+    font-size: clamp(1.25rem, 3.5vw, 1.875rem);
+  }
+  .responsive-text-2xl {
+    font-size: clamp(1.5rem, 4.5vw, 2.5rem);
+  }
+
+  /* تحسين منطقة اللمس على الهاتف */
+  @media (max-width: 768px) {
+    button, a[role="button"], .clickable {
+      min-height: 40px;
+    }
+    .glass-card {
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+  }
+
+  /* احترام تفضيل تقليل الحركة */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-neon-pulse,
+    .animate-float,
+    .animate-orbit,
+    .animate-cosmic-in,
+    .animate-slide-up-soft,
+    .shimmer-border {
+      animation: none !important;
+    }
+    .card-3d, .btn-cosmic {
+      transition: none !important;
+    }
+  }
+}
+
+/* ============= قواعد الطباعة ============= */
+@media print {
+  body::before { display: none; }
+  body { background: white !important; color: black !important; }
+  .no-print { display: none !important; }
+  .print-only { display: block !important; }
+
+  /* الإيصال الحراري 80mm */
+  .thermal-receipt {
+    width: 80mm !important;
+    padding: 4mm !important;
+    font-family: "Courier New", monospace;
+    color: black;
+    background: white;
+  }
+
+  /* فاتورة A4 */
+  .a4-invoice {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 15mm;
+    background: white;
+    color: black;
+  }
+
+  @page { margin: 0; }
+}
+
+.print-only { display: none; }
+
+/* ============= خلفية ورق ملمتري لغرفة التطبيق ============= */
+/* الوضع الليلي — رمادي داكن بخطوط أفقية وعمودية */
+.app-striped-bg {
+  position: relative;
+  background-color: oklch(0.22 0.005 250);
+  background-image:
+    /* خطوط رئيسية كل 50px */
+    linear-gradient(to right, oklch(0.32 0.008 250 / 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.32 0.008 250 / 0.5) 1px, transparent 1px),
+    /* خطوط فرعية كل 10px */
+    linear-gradient(to right, oklch(0.27 0.005 250 / 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.27 0.005 250 / 0.45) 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: 0 0;
+}
+.app-striped-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at top, oklch(0.26 0.01 250 / 0.4), transparent 70%);
+  z-index: 0;
+}
+
+/* الوضع النهاري — ورق ملمتري ناعم */
+.light .app-striped-bg {
+  background-color: oklch(0.985 0.008 85);
+  background-image:
+    linear-gradient(to right, oklch(0.78 0.04 85 / 0.55) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.78 0.04 85 / 0.55) 1px, transparent 1px),
+    linear-gradient(to right, oklch(0.88 0.02 85 / 0.5) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(0.88 0.02 85 / 0.5) 1px, transparent 1px);
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: 0 0;
+}
+.light .app-striped-bg::before {
+  background: radial-gradient(ellipse at top, oklch(0.85 0.05 85 / 0.20), transparent 70%);
+}
+
+/* اخفاء طبقة النجوم داخل غرفة التطبيق */
+body:has(.app-striped-bg) .starfield-bg { display: none !important; }
+
+/* ============= واجهات البوابة (دخول/تفعيل/اختيار المتجر) ============= */
+.gateway-bg {
+  position: relative;
+  min-height: 100vh;
+  background-color: oklch(0.12 0.03 280);
+  isolation: isolate;
+}
+.gateway-bg::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url("/gateway-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gateway-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    linear-gradient(135deg, oklch(0.12 0.05 290 / 0.30), oklch(0.18 0.06 60 / 0.20)),
+    radial-gradient(ellipse at 20% 10%, oklch(0.55 0.22 300 / 0.12), transparent 60%),
+    radial-gradient(ellipse at 85% 85%, oklch(0.75 0.18 80 / 0.12), transparent 60%);
+}
+body:has(.gateway-bg) .starfield-bg { display: none !important; }
+
+.text-gradient-royal {
+  background: linear-gradient(135deg, oklch(0.85 0.16 85), oklch(0.70 0.20 305));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
