@@ -1,0 +1,117 @@
+================================================================================
+                       GALAXY — PROPRIETARY LICENSE
+                          رخصة الملكية الخاصة
+================================================================================
+
+Copyright (c) 2026 — Galaxy Software. All Rights Reserved.
+حقوق النشر © 2026 — جميع الحقوق محفوظة.
+
+================================================================================
+                           ENGLISH VERSION
+================================================================================
+
+PROPRIETARY AND CONFIDENTIAL SOFTWARE LICENSE AGREEMENT
+
+This software, including its source code, design, documentation, ideas,
+algorithms, user interface, and all associated materials (collectively, the
+"Software"), is the exclusive intellectual property of the copyright holder
+("Owner"). The Software is licensed, NOT sold.
+
+1. GRANT OF LICENSE
+   No license is granted to any party except by a separate written agreement
+   signed by the Owner. Possession of this source code does NOT grant any
+   right to use, modify, or distribute it.
+
+2. RESTRICTIONS
+   You are STRICTLY PROHIBITED from:
+   (a) Copying, reproducing, or duplicating the Software in whole or in part.
+   (b) Modifying, adapting, translating, or creating derivative works.
+   (c) Distributing, sublicensing, leasing, renting, selling, or otherwise
+       transferring the Software to any third party.
+   (d) Reverse-engineering, decompiling, disassembling, or attempting to
+       derive the source code or underlying algorithms.
+   (e) Removing or altering any copyright, trademark, or proprietary notices.
+   (f) Using the Software for commercial purposes without prior written
+       authorization from the Owner.
+   (g) Bypassing, disabling, or circumventing the activation, licensing, or
+       anti-tampering mechanisms.
+
+3. INTELLECTUAL PROPERTY
+   All title, ownership rights, and intellectual property rights in and to
+   the Software (including but not limited to the activation system, the
+   anti-debug protection layer, the user interface design, the business
+   logic, and the underlying concept) remain with the Owner.
+
+4. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+   OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
+
+5. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL THE OWNER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+   FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+6. TERMINATION
+   Any breach of this license terminates your rights immediately and entitles
+   the Owner to pursue all available legal remedies, including injunctive
+   relief and damages.
+
+7. GOVERNING LAW
+   This license shall be governed by the applicable intellectual property
+   laws of the Owner's jurisdiction.
+
+================================================================================
+                         النسخة العربية
+================================================================================
+
+اتفاقية ترخيص برمجية ملكية خاصة وسرية
+
+هذا البرنامج، بما في ذلك الكود المصدري، التصميم، التوثيق، الأفكار،
+الخوارزميات، واجهة المستخدم، وجميع المواد المرتبطة به (يُشار إليها
+مجتمعةً بـ "البرنامج")، هو ملكية فكرية حصرية لصاحب حقوق النشر ("المالك").
+البرنامج مرخّص ولا يُباع.
+
+١. منح الترخيص
+   لا يُمنح أي ترخيص لأي طرف إلا بموجب اتفاقية خطية منفصلة موقّعة من
+   المالك. حيازة هذا الكود المصدري لا تمنح أي حق في استخدامه أو تعديله
+   أو توزيعه.
+
+٢. القيود
+   يُمنع منعاً باتاً ما يلي:
+   (أ) نسخ البرنامج أو استنساخه كلياً أو جزئياً.
+   (ب) تعديله، تكييفه، ترجمته، أو إنشاء أعمال مشتقة منه.
+   (ج) توزيعه، إعادة ترخيصه، تأجيره، بيعه، أو نقله لأي طرف ثالث.
+   (د) عكس هندسته، فك تجميعه، أو محاولة استخراج الكود المصدري
+       أو الخوارزميات الأساسية.
+   (هـ) إزالة أو تعديل أي إشعارات حقوق النشر أو العلامات التجارية.
+   (و) استخدامه لأغراض تجارية بدون إذن خطي مسبق من المالك.
+   (ز) تجاوز أو تعطيل أو الالتفاف على أنظمة التفعيل والترخيص والحماية.
+
+٣. الملكية الفكرية
+   جميع حقوق الملكية والحقوق الفكرية في البرنامج (بما في ذلك على سبيل
+   المثال لا الحصر: نظام التفعيل، طبقة الحماية ضد التفتيش، تصميم الواجهة،
+   منطق العمل، والفكرة الأساسية) تبقى ملكاً للمالك.
+
+٤. إخلاء الضمان
+   يُقدَّم البرنامج "كما هو" بدون أي ضمان من أي نوع، صريحاً كان أم ضمنياً،
+   بما في ذلك على سبيل المثال لا الحصر ضمانات القابلية للتسويق، الملاءمة
+   لغرض معيّن، وعدم الانتهاك.
+
+٥. تحديد المسؤولية
+   في أي حال من الأحوال، لن يكون المالك مسؤولاً عن أي مطالبة أو أضرار أو
+   أي مسؤولية أخرى، سواء في إطار عقد أو ضرر أو غير ذلك، ناشئة عن البرنامج
+   أو استخدامه أو التعامل معه.
+
+٦. الإنهاء
+   أي خرق لهذه الرخصة يُنهي حقوقك فوراً ويخوّل المالك متابعة جميع سبل
+   الانتصاف القانونية المتاحة، بما في ذلك الإجراءات الزجرية والتعويضات.
+
+٧. القانون الحاكم
+   تخضع هذه الرخصة لقوانين الملكية الفكرية المعمول بها في الجهة القضائية
+   للمالك.
+
+================================================================================
+END OF LICENSE — نهاية الرخصة
+================================================================================
